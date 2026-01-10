@@ -340,3 +340,41 @@ section.show {
   color: #9ca3af;
   font-size: 16px;
 }
+
+
+/* -------- TECH MARQUEE -------- */
+.tech-marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: #050505;
+}
+
+.tech-track {
+  display: flex;
+  width: max-content;
+  gap: 48px;
+  animation: marquee 30s linear infinite;
+}
+
+.tech-track span {
+  font-size: 16px;
+  color: #e5e7eb;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-marquee:hover .tech-track {
+  animation-play-state: paused;
+}

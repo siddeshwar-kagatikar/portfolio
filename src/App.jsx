@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Cursor from "./components/Cursor";
 import useReveal from "./hooks/useReveal";
+import TechMarquee from "./components/TechMarquee";
 
 function App() {
   useReveal();
@@ -16,6 +17,7 @@ function App() {
 
       <main>
         <Hero />
+        <TechMarquee />
         <About />
         <Projects />
         <Contact />
