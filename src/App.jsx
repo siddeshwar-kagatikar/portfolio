@@ -1,22 +1,25 @@
-import useReveal from "./hooks/useReveal";
-import Spotlight from "./components/Spotlight";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import TechStrip from "./components/TechStrip";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Connect from "./components/Connect";
+import Contact from "./components/Contact";
+import Cursor from "./components/Cursor";
+import useReveal from "./hooks/useReveal";
 
 function App() {
   useReveal();
 
   return (
     <>
-      <TechStrip />
-      <Spotlight />
-      <Hero />  
-      <About />
-      <Projects />
-      <Connect />
+      <Cursor />
+      <Navbar />
+
+      <main>
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
     </>
   );
 }

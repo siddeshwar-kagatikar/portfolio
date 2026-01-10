@@ -2,22 +2,19 @@ import { useEffect } from "react";
 
 export default function useReveal() {
   useEffect(() => {
-    const elements = document.querySelectorAll(".reveal, .reveal-stagger");
+    const els = document.querySelectorAll("section");
 
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active");
-            observer.unobserve(entry.target); // animate once
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add("show");
           }
         });
       },
       { threshold: 0.15 }
     );
 
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
+    els.forEach((el) => observer.observe(el));
   }, []);
 }
