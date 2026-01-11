@@ -8,7 +8,7 @@ function Contact() {
       </h2>
 
       <a
-        href="mailto:yourmail@gmail.com"
+        href="mailto:siddeshwar2004@gmail.com"
         className="hero-btn"
       >
         Drop me a message ↗
