@@ -15,7 +15,7 @@ function Projects() {
         {/* RIGHT: TEXT */}
         <div className="project-info">
           <span className="year">2025</span>
-          <h3>Code Evaluation Platform</h3>
+          <h3>CodeHive</h3>
 
           <p>
             Built a full-stack web app for coding assessments and interviews with role-based access, integrated code
@@ -32,7 +32,7 @@ function Projects() {
           </div>
 
           <a
-            href="https://github.com/your-username/code-evaluator"
+            href="https://github.com/siddeshwar-kagatikar/codeHive.git"
             target="_blank"
             className="project-link"
           >
