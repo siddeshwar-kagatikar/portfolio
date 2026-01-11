@@ -44,7 +44,7 @@ function Projects() {
       <div className="project-card">
         {/* LEFT: IMAGE */}
         <div className="project-media">
-          <img src="/images/project2.png" alt="EmergiGo – Intelligent Ambulance Allocation System" />
+          <img src="/images/project2.jpeg" alt="EmergiGo – Intelligent Ambulance Allocation System" />
         </div>
 
         {/* RIGHT: TEXT */}
