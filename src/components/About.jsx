@@ -10,15 +10,14 @@ function About() {
       </h2>
 
       <p className="about-text">
-        I’m a Computer Science student focused on backend development and
-        system design. I enjoy breaking down complex problems, designing
-        scalable architectures, and turning ideas into reliable products.
+        I’m a Computer Science student at IIIT Bangalore who enjoys building real-world software systems end to end — 
+        from designing core logic to deploying production-ready applications. I like working across different domains and 
+        learning how various pieces of a system come together.
       </p>
 
       <p className="about-text">
-        My interests lie in distributed systems, APIs, and performance-oriented
-        backend engineering. I’m continuously learning by building and
-        experimenting with real-world projects.
+        I’ve worked on projects spanning distributed systems, machine learning, computer vision, and full-stack 
+        development, and I enjoy applying these skills to solve practical problems at scale.
       </p>
     </section>
   );
