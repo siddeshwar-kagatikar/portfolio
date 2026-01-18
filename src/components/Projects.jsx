@@ -140,7 +140,7 @@ function Projects() {
           </div>
 
           <a
-            href="https://github.com/your-username/code-evaluator"
+            href="https://github.com/siddeshwar-kagatikar/Job_Portal.git"
             target="_blank"
             className="project-link"
           >
