@@ -378,3 +378,332 @@ section.show {
 .tech-marquee:hover .tech-track {
   animation-play-state: paused;
 }
+
+/* ================= MOBILE POLISH ================= */
+@media (max-width: 768px) {
+
+  /* ----- NAVBAR ----- */
+  .navbar {
+    width: calc(100% - 24px);
+    justify-content: space-between;
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .nav-center {
+    display: none; /* hide middle links on mobile */
+  }
+
+  .nav-left {
+    font-size: 14px;
+  }
+
+  .nav-cta {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  /* ----- HERO ----- */
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.15;
+    margin: 24px 0;
+  }
+
+  .hero-center {
+    gap: 22px;
+  }
+
+  .hero-btn {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+
+  /* ----- PROJECTS ----- */
+  .project-card {
+    padding: 60px 0;
+    cursor: auto; /* restore cursor on touch */
+  }
+
+  .project-info h3 {
+    font-size: 28px;
+  }
+
+  .project-info p {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .project-media img {
+    width: 100%;
+  }
+
+  .tech-stack span {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  /* Disable hover-only effects */
+  .project-card:hover .project-media img {
+    transform: none;
+  }
+
+  /* ----- ABOUT ----- */
+  .about-title {
+    font-size: 36px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  /* ----- CONTACT ----- */
+  .contact-title {
+    font-size: 36px;
+  }
+
+  /* ----- TECH MARQUEE ----- */
+  .tech-track {
+    gap: 32px;
+    animation-duration: 45s; /* slower on mobile */
+  }
+
+  .tech-track span {
+    font-size: 14px;
+  }
+}
+
+/* ===== NAVBAR MOBILE ===== */
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 32px);
+  padding: 24px;
+
+  background: rgba(20, 20, 20, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  z-index: 999;
+}
+
+.mobile-menu a {
+  font-size: 16px;
+  color: #e5e7eb;
+}
+
+/* ----- RESPONSIVE RULES ----- */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}
+
+/* ===== HERO MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 90vh; /* slightly smaller than desktop */
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 20px 0;
+  }
+
+  .hero h1 span {
+    display: block; /* better line wrapping on mobile */
+  }
+
+  .pill {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+
+  .hero-center {
+    gap: 20px;
+  }
+
+  .hero-btn {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+}
+
+/* ===== ABOUT MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about-title {
+    font-size: 34px;
+    line-height: 1.15;
+    margin: 20px 0 24px;
+  }
+
+  .about-title span {
+    display: block; /* cleaner line wrap */
+  }
+
+  .about-text {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+}
+
+/* ===== TECH MARQUEE MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  .tech-marquee {
+    padding: 14px 0;
+  }
+
+  .tech-track {
+    gap: 28px;                 /* reduce crowding */
+    animation-duration: 50s;   /* slower on mobile */
+  }
+
+  .tech-track span {
+    font-size: 13px;
+    opacity: 0.75;
+  }
+
+  /* Softer edge fade for small screens */
+  .tech-marquee {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+  }
+}
+
+/* ===== PROJECTS MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  /* Section spacing */
+  #work {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .section-title {
+    font-size: 34px;
+    margin-bottom: 48px;
+  }
+
+  /* Project card */
+  .project-card {
+    padding: 48px 0;
+    gap: 28px;
+  }
+
+  /* Image first, but visually lighter */
+  .project-media img {
+    width: 100%;
+    border-radius: 14px;
+  }
+
+  /* Text hierarchy */
+  .project-info h3 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 10px 0 12px;
+  }
+
+  .project-info p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  .year {
+    font-size: 13px;
+    opacity: 0.8;
+  }
+
+  /* Tech stack */
+  .tech-stack {
+    margin: 18px 0;
+    gap: 8px;
+  }
+
+  .tech-stack span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  /* GitHub link */
+  .project-link {
+    font-size: 13px;
+  }
+
+  /* Disable hover assumptions */
+  .project-card {
+    cursor: auto;
+  }
+
+  .project-card:hover .project-media img {
+    transform: none;
+  }
+}
+
+/* ===== CONTACT MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+  #contact {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .contact-title {
+    font-size: 34px;
+    line-height: 1.15;
+    margin: 18px 0 28px;
+  }
+
+  .contact-title span {
+    display: block; /* cleaner wrap */
+  }
+
+  .contact .hero-btn {
+    padding: 12px 22px;
+    font-size: 14px;
+  }
+}
+
+/* ===== DISABLE SCROLL REVEAL ON MOBILE ===== */
+/* @media (max-width: 768px) {
+  section {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+} */
