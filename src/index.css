@@ -701,9 +701,9 @@ section.show {
 }
 
 /* ===== DISABLE SCROLL REVEAL ON MOBILE ===== */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   section {
     opacity: 1 !important;
     transform: none !important;
   }
-} */
+}
